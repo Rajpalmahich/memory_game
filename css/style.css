@@ -1,0 +1,30 @@
+body{
+    background-color: rgb(104, 100, 100);
+}
+
+.container{
+
+}
+
+header{
+    background-color: white;
+    border-radius: 10px;
+}
+
+.mg-logo{
+    display: block;
+    margin: auto;
+    padding-top: 10px;
+    width: 15%;
+}
+
+header h1{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header p{
+    text-align: center;
+    padding-bottom: 10px;
+    color: coral;
+}
