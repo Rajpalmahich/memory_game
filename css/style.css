@@ -29,3 +29,69 @@ header p{
     color: coral;
 }
 
+.easy {
+    width: 220px;
+    height: 225px;
+    margin: auto;
+    padding: auto;
+    background-color: gray;
+    display: block;
+}
+
+.e1, .e2, .e3, .e4, .e5, .e6, .e7, .e8, .e9, .e10, .e11, .e12, .e13, .e14, .e15, .e16 {
+    position: relative;
+    display: inline-block;
+    margin: 0px;
+    width: 50px;
+    left: 5px;
+    margin-top: 5px;
+    height: 50px;
+    padding: 0px;
+    background-color: white;
+}
+.btn{
+    width: 300px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 25px;
+}
+.inpt{
+    width: 250px;
+    height: 30px;
+}
+.submit{
+    width: 50px;
+    height: 35px;
+}
+
+
+.flip3d{
+    width: 50px;
+    height: 50px;
+    float: left;
+}
+.flip3d > .front {
+    position: absolute;
+    transform: perspective(600px) rotateY(0deg);
+    background-color: #fc0;
+    width:50px ;
+    height: 50px;
+    backface-visibility: hidden;
+    transition: transform .5s linear 0s;
+}
+.flip3d > .back {
+    position: absolute;
+    transform: perspective(600px) rotateY(180deg);
+    background-color: #111111;
+    width:50px ;
+    height: 50px;
+    opacity: 0.9;
+    backface-visibility: hidden;
+    transition: transform .5s linear 0s;
+}
+.flip3d:hover > .front {
+    transform: perspective(600px) rotateY(-180deg);
+}
+.flip3d:hover > .back {
+    transform: perspective(600px) rotateY(0deg);
+}
