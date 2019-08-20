@@ -8,29 +8,39 @@
     <link rel="stylesheet" href="../css/style.css"/>
     <link rel="icon" href="images/MG.png" type="image/png" />
     <script type="text/javascript" src="../javascript/client.js"></script>
-    <style>
-    
-    </style>
 
 </head>
 <body onload="initialize()" >
     <div class="container">
+
+        <!-- Header starts -->
         <header>
             <img src="images/logos/mg.png" alt="mg-logo" class="mg-logo">
             <h1>Memory Game</h1>
             <p>Lets play the memory game...</p>
         </header>
-        <div class="container">
+        <!-- Header ends -->
+
+        <!-- Main starts -->
+        <main class="container">
+
+            <!-- Form for user starts -->
             <div class="name" align="center">
                 <form>
                     <input type="text"  placeholder="Enter Your Name" class="inpt"/>
                     <input type="submit" value="Play" class="submit"/>
                 </form>
             </div>
+            <!-- Form for user starts -->
+
+            <!-- Choice for levels starts -->
             <div class="level">
                 <p align="center"><input type="button" value="Easy(4*4)" class='btn' onclick="loadImages()"></p><br/>
-                <p align="center"><button class="btn">Hard(6*6)</button></p>
+                <p align="center"><input type="button" value="Hard(6*6)" class='btn'></p><br/>
             </div>
+            <!-- Choice for levels ends -->
+
+            <!-- Tiles-section for easy level starts -->
             <div class="easy">
                 <div class="e1">
                     <div class="filter core" >
@@ -212,9 +222,25 @@
                 </div><br>
 
             </div>
+            <!-- Tiles-section for easy level ends -->
+
+            <!-- Tiles-section for hard level starts-->
+
+
+
+
+
+
+            <!-- Tiles-section for hard level ends-->
         </div>
+
+        <!-- Main ends -->
     </div>
 
-    
+    <!-- Footer starts-->
+    <footer>
+            <p class="copyright-text text-1">&copy; 2019 Design & build by<br><a href="https://github.com/SunilKrSingh">Sunil Kumar Singh</a> & <a href="https://github.com/RajpalMahich">Rajpal Mahich</a></p>
+    </footer>
+    <!-- Footer ends -->
 </body>
 </html>

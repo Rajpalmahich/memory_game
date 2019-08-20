@@ -64,6 +64,15 @@ header p{
     height: 35px;
 }
 
+footer{
+    background-color: rgb(216, 193, 193);
+    text-align: center;
+    padding: 1px;
+    position: absolute;
+    margin: 0px;
+    display: block;
+    width: 100%;
+}
 
 .flip3d{
     width: 50px;
