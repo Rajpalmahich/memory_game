@@ -73,7 +73,7 @@ function initialize(){
 }
 
 function loadImages(){
-    //randomly assigns value to counter
+    //randomly chooses pics and puts in two random boxes
     for( var j = 0; j < 8; j++){
         var counter = Math.floor(Math.random() * images.length);
         var id1 = ids[Math.floor(Math.random() * ids.length)];
@@ -88,9 +88,6 @@ function loadImages(){
                 ids.splice(i, 1);
             }
         }
-        //console.log(id1, id2);
-        console.log(ids.length);
-        //console.log(counter);
         document.getElementById(id1).src = images[counter].src;
         document.getElementById(id2).src = images[counter].src;
     }
