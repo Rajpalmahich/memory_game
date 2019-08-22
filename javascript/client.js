@@ -1,6 +1,7 @@
 var images = new Array(32);
 
-var ids = new Array(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16);
+var idsEasy = new Array(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16);
+var idsHard = new Array('1h','2h','3h','4h','5h','6h','7h','8h','9h','10h','11h','12h','13h','14h','15h','16h','17h','18h','19h','20h','21h','22h','23h','24h','25h','26h','27h','28h','29h','30h','31h','32h','33h','34h','35h','36h');
 
 function initialize(){
     // setting up array with images
@@ -72,20 +73,44 @@ function initialize(){
     images[32].src = "../public/images/tiles/33.png";
 }
 
-function loadImages(){
+function loadImagesEasy(){
     //randomly chooses pics and puts in two random boxes
+    //for easy level
     for( var j = 0; j < 8; j++){
         var counter = Math.floor(Math.random() * images.length);
-        var id1 = ids[Math.floor(Math.random() * ids.length)];
-        for( var i = 0; i < ids.length; i++){
-            if ( ids[i] === id1) {
-                ids.splice(i, 1);
+        var id1 = idsEasy[Math.floor(Math.random() * idsEasy.length)];
+        for( var i = 0; i < idsEasy.length; i++){
+            if ( idsEasy[i] === id1) {
+                idsEasy.splice(i, 1);
             }
         }
-        var id2 = ids[Math.floor(Math.random() * ids.length)];
-        for( var i = 0; i < ids.length; i++){
-            if ( ids[i] === id2) {
-                ids.splice(i, 1);
+        var id2 = idsEasy[Math.floor(Math.random() * idsEasy.length)];
+        for( var i = 0; i < idsEasy.length; i++){
+            if ( idsEasy[i] === id2) {
+                idsEasy.splice(i, 1);
+            }
+        }
+        document.getElementById(id1).src = images[counter].src;
+        document.getElementById(id2).src = images[counter].src;
+    }
+
+}
+
+function loadImagesHard(){
+    //randomly chooses pics and puts in two random boxes
+    //for hard level
+    for( var j = 0; j < 18; j++){
+        var counter = Math.floor(Math.random() * images.length);
+        var id1 = idsHard[Math.floor(Math.random() * idsHard.length)];
+        for( var i = 0; i < idsHard.length; i++){
+            if ( idsHard[i] === id1) {
+                idsHard.splice(i, 1);
+            }
+        }
+        var id2 = idsHard[Math.floor(Math.random() * idsHard.length)];
+        for( var i = 0; i < idsHard.length; i++){
+            if ( idsHard[i] === id2) {
+                idsHard.splice(i, 1);
             }
         }
         document.getElementById(id1).src = images[counter].src;
