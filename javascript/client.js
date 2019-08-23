@@ -93,6 +93,9 @@ function loadImagesEasy(){
         document.getElementById(id1).src = images[counter].src;
         document.getElementById(id2).src = images[counter].src;
     }
+    document.getElementById("easy").style.display = "block";
+    document.getElementById("level").style.display = "none";
+    document.getElementsByClassName("level").style.display = "none";
 
 }
 
@@ -116,7 +119,31 @@ function loadImagesHard(){
         document.getElementById(id1).src = images[counter].src;
         document.getElementById(id2).src = images[counter].src;
     }
+    document.getElementById("hard").style.display = "block";
+    document.getElementById("level").style.display = "none";
+    document.getElementsByClassName("level").style.display = "none";
 
 }
+
+
+function sub(){
+        var name1 = document.getElementById("inpt").value;
+        var inpt = document.getElementById("inpt").value;
+        submitOK="true";
+        if (inpt.length>0){
+               submitOK="true";
+        }
+        else{
+              submitOK="false";
+        }
+
+        if (submitOK=="false"){
+                alert("Please Enter Your Name")
+                return false;
+        }
+
+}
+
+
 
 

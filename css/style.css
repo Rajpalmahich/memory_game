@@ -126,3 +126,26 @@ footer{
 .flip3d:hover > .back {
     transform: perspective(600px) rotateY(0deg);
 }
+
+
+
+.btnplay{
+    width: 300px;
+    height: 30px;
+    background-color: #111111;
+    top: 10px;
+    cursor: pointer;
+}
+.Play{
+    height: 10px;
+    color: aliceblue;
+    font-weight: 700;
+    padding-top: 5px;
+    top: 10px;
+    font-family: Allura,"Times New Roman",monospace;
+    bottom: auto;
+
+}
+.foot{
+    margin-top: 20px;
+}
