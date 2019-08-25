@@ -1,14 +1,16 @@
 body{
     background-color: rgb(104, 100, 100);
+    margin: auto;
+    width: 100%;
 }
-
-.container{
-
+.main{
 }
 
 header{
-    background-color: white;
+    background-color: rgb(255, 255, 255);
+    margin: 10px;
     border-radius: 10px;
+
 }
 
 .mg-logo{
@@ -30,8 +32,13 @@ header p{
 }
 
 .easy {
-    width: 220px;
-    height: 225px;
+    position: absolute;;
+    top: 0px;
+    bottom:50px;
+    right: 0px;
+    left: 0px;
+    width: 222px;
+    height: 222px;
     margin: auto;
     padding: auto;
     background-color: gray;
@@ -39,15 +46,42 @@ header p{
 }
 
 .hard {
+    position: absolute;;
+    top: 0px;
+    bottom: 90px;
+    right: 0px;
+    left: 0px;
     width: 330px;
-    height: 325px;
+    height: 330px;
     margin: auto;
     padding: auto;
     background-color: gray;
     display: block;
 }
+.e1, .e2, .e3, .e4{
+    position: relative;
+    display: inline-block;
+    margin: 0px;
+    width: 50px;
+    left: 5px;
+    margin-top: 5px;
+    height: 50px;
+    padding: 0px;
+    background-color: white; 
+}
+.e5, .e6, .e7, .e8, .e9, .e10, .e11, .e12, .e13, .e14, .e15, .e16 {
+    position: relative;
+    display: inline-block;
+    margin: 0px;
+    width: 50px;
+    left: 5px;
+    margin-top: 0px;
+    height: 50px;
+    padding: 0px;
+    background-color: white;
+}
 
-.e1, .e2, .e3, .e4, .e5, .e6, .e7, .e8, .e9, .e10, .e11, .e12, .e13, .e14, .e15, .e16 {
+.h1, .h2, .h3, .h4, .h5, .h6{
     position: relative;
     display: inline-block;
     margin: 0px;
@@ -59,13 +93,13 @@ header p{
     background-color: white;
 }
 
-.h1, .h2, .h3, .h4, .h5, .h6, .h7, .h8, .h9, .h10, .h11, .h12, .h13, .h14, .h15, .h16 , .h17, .h18, .h19, .h20, .h21, .h22, .h23, .h24,.h25, .h26, .h27, .h28, .h29, .h30, .h31 , .h32, .h33, .h34, .h35, .h36{
+.h7, .h8, .h9, .h10, .h11, .h12, .h13, .h14, .h15, .h16 , .h17, .h18, .h19, .h20, .h21, .h22, .h23, .h24,.h25, .h26, .h27, .h28, .h29, .h30, .h31 , .h32, .h33, .h34, .h35, .h36{
     position: relative;
     display: inline-block;
     margin: 0px;
     width: 50px;
     left: 5px;
-    margin-top: 5px;
+    margin-top: 0px;;
     height: 50px;
     padding: 0px;
     background-color: white;
@@ -80,6 +114,8 @@ header p{
 .inpt{
     width: 250px;
     height: 30px;
+    text-align: center;
+    margin-top: 25px
 }
 .submit{
     width: 50px;
@@ -91,6 +127,7 @@ footer{
     text-align: center;
     padding: 1px;
     position: absolute;
+    bottom:0;
     margin: 0px;
     display: block;
     width: 100%;
