@@ -1,4 +1,4 @@
-var images = new Array(32);
+var images = new Array(50);
 
 var idsEasy = new Array(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16);
 var idsHard = new Array('1h','2h','3h','4h','5h','6h','7h','8h','9h','10h','11h','12h','13h','14h','15h','16h','17h','18h','19h','20h','21h','22h','23h','24h','25h','26h','27h','28h','29h','30h','31h','32h','33h','34h','35h','36h');
@@ -71,6 +71,42 @@ function initialize(){
     images[31].src = "public/images/tiles/32.png";
     images[32] = new Image(50, 50);
     images[32].src = "public/images/tiles/33.png";
+    images[33] = new Image(50, 50);
+    images[33].src = "public/images/tiles/34.png";
+    images[34] = new Image(50, 50);
+    images[34].src = "public/images/tiles/35.png";
+    images[35] = new Image(50, 50);
+    images[35].src = "public/images/tiles/36.png";
+    images[36] = new Image(50, 50);
+    images[36].src = "public/images/tiles/37.png";
+    images[37] = new Image(50, 50);
+    images[37].src = "public/images/tiles/38.png";
+    images[38] = new Image(50, 50);
+    images[38].src = "public/images/tiles/39.png";
+    images[39] = new Image(50, 50);
+    images[39].src = "public/images/tiles/40.png";
+    images[40] = new Image(50, 50);
+    images[40].src = "public/images/tiles/41.png";
+    images[41] = new Image(50, 50);
+    images[41].src = "public/images/tiles/42.png";
+    images[42] = new Image(50, 50);
+    images[42].src = "public/images/tiles/43.png";
+    images[43] = new Image(50, 50);
+    images[43].src = "public/images/tiles/44.png";
+    images[44] = new Image(50, 50);
+    images[44].src = "public/images/tiles/45.png";
+    images[45] = new Image(50, 50);
+    images[45].src = "public/images/tiles/46.jpeg";
+    images[46] = new Image(50, 50);
+    images[46].src = "public/images/tiles/47.png";
+    images[47] = new Image(50, 50);
+    images[47].src = "public/images/tiles/48.jpeg";
+    images[48] = new Image(50, 50);
+    images[48].src = "public/images/tiles/49.jpeg";
+    images[49] = new Image(50, 50);
+    images[49].src = "public/images/tiles/50.png";
+    images[50] = new Image(50, 50);
+    images[50].src = "public/images/tiles/51.jpeg";
 }
 
 function loadImagesEasy(){
