@@ -113,14 +113,25 @@ header p{
     width: 250px;
     height: 30px;
     text-align: center;
-    margin-top: 25px
-    border-radius:5px;
+    margin-top: 25px;
+    border-radius: 10px;
 }
 .submit{
     width: 50px;
     height: 35px;
 }
-
+.psub{
+    width: 250px;
+    height: 30px;
+    background-color: #111111;
+    text-align: center;
+    align-items: center;
+    vertical-align: middle;
+    border-radius: 10px;
+}
+p{
+    border-radius: 10px;
+}
 footer{
     background-color: rgb(216, 193, 193);
     text-align: center;
