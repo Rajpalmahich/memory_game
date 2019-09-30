@@ -114,6 +114,7 @@ header p{
     height: 30px;
     text-align: center;
     margin-top: 25px
+    border-radius:5px;
 }
 .submit{
     width: 50px;
