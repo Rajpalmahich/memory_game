@@ -2,6 +2,7 @@ var images = new Array(50);
 
 var idsEasy = new Array(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16);
 var idsHard = new Array('1h','2h','3h','4h','5h','6h','7h','8h','9h','10h','11h','12h','13h','14h','15h','16h','17h','18h','19h','20h','21h','22h','23h','24h','25h','26h','27h','28h','29h','30h','31h','32h','33h','34h','35h','36h');
+var limit = 0;
 
 function initialize(){
     // setting up array with images
@@ -110,6 +111,7 @@ function initialize(){
 }
 
 function loadImagesEasy(){
+    limit = 16;
     //randomly chooses pics and puts in two random boxes
     //for easy level
     for( var j = 0; j < 8; j++){
@@ -131,11 +133,13 @@ function loadImagesEasy(){
     }
     document.getElementById("easy").style.display = "block";
     document.getElementById("level").style.display = "none";
-    document.getElementsByClassName("level").style.display = "none";
+    //document.getElementsByClassName("level").style.display = "none";
 
 }
 
 function loadImagesHard(){
+    limit = 36;
+    console.log(limit);
     //randomly chooses pics and puts in two random boxes
     //for hard level
     for( var j = 0; j < 18; j++){
@@ -180,6 +184,42 @@ function sub(){
 
 }
 
+var cnt = 0;
+var src1;
+var src2;
+
+function turn(img){
+    console.log("this works")
+    if(cnt==0){
+        src1 = img.src;
+        //src1 = document.getElementById(img.id).src;
+        cnt++;
+        console.log("src1 noted");
+        colsole.log(src1);
+    }
+    else if(cnt==1){
+        src2 = img.src;
+        //src2 = document.getElementById(img.id).src;
+        cnt++;
+        console.log("src2 noted");
+    }
+    else if(cnt==2){
+        if(src1 == src2){
+            console.log("Both Kept as it is");
+            cnt=0;
+            turn(img);
+            last+=2;
+        }
+        else{
+            console.log("Turned back last two");
+            cnt=0;
+            turn(img);
+        }
+    }
+    if (last == limit){
+        console.log("You Won");
+    }
+}
 
 
 
