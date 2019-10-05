@@ -165,24 +165,8 @@ function loadImagesHard(){
 
 }
 
+/*
 
-function sub(){
-        var name1 = document.getElementById("inpt").value;
-        var inpt = document.getElementById("inpt").value;
-        submitOK="true";
-        if (inpt.length>0){
-               submitOK="true";
-        }
-        else{
-              submitOK="false";
-        }
-
-        if (submitOK=="false"){
-                alert("Please Enter Your Name")
-                return false;
-        }
-
-}
 
 var cnt = 0;
 var src1;
@@ -222,4 +206,14 @@ function turn(img){
 }
 
 
+ */
 
+function enter() {
+    var name= document.getElementById("inpt").value;
+    var text = "Hello " +name;
+    document.getElementById("nameh2").innerHTML=text;
+    document.getElementById("after").style.display="block";
+    document.getElementById("before").style.display="none";
+    document.getElementById("form").style.display="none";
+    document.getElementById("level").style.display="block";
+}
