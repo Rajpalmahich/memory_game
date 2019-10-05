@@ -143,39 +143,56 @@ footer{
     width: 100%;
 }
 
-.flip3d{
+.filter,.front,.back{
     width: 50px;
     height: 50px;
-    float: left;
 }
-.flip3d > .front {
-    position: absolute;
-    transform: perspective(600px) rotateY(0deg);
-    background-color: #fc0;
-    width:50px ;
-    height: 50px;
+.flip3d{
+    transition: 0.8s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+.front,.back{
     backface-visibility: hidden;
-    transition: transform .5s linear 0s;
-}
-.flip3d > .back {
     position: absolute;
-    transform: perspective(600px) rotateY(180deg);
-    background-color: #111111;
-    width:50px ;
+}
+.front{
+    z-index: 2;
+    transform: rotateY(0deg);
+}
+.back{
+    transform: rotateY(180deg);
+}
+.card{
+    perspective: 1000;
+    position: relative;
+}
+.card.filter.flip3d.flipped{
+    transform: rotateY(180deg);
+}
+#after{
+    position: relative;
+    color: black;
+    background-color: wheat;
+    width: 100%;
+    padding-left: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    display: none;
+}
+#nameh2{
+    position: relative;
+    display: inline;
     height: 50px;
-    opacity: 0.9;
-    backface-visibility: hidden;
-    transition: transform .5s linear 0s;
-}
-.flip3d:hover > .front {
-    transform: perspective(600px) rotateY(-180deg);
-}
-.flip3d:hover > .back {
-    transform: perspective(600px) rotateY(0deg);
-}
 
+}
+/*
+*/
 
-
+.filter.hover .flip3d{
+    transform: rotateY(180deg);
+}
 .btnplay{
     width: 300px;
     height: 30px;
