@@ -133,8 +133,7 @@ function loadImagesEasy(){
     }
     document.getElementById("easy").style.display = "block";
     document.getElementById("level").style.display = "none";
-    //document.getElementsByClassName("level").style.display = "none";
-
+    document.getElementsByClassName("level").style.display = "none";
 }
 
 function loadImagesHard(){
@@ -162,10 +161,7 @@ function loadImagesHard(){
     document.getElementById("hard").style.display = "block";
     document.getElementById("level").style.display = "none";
     document.getElementsByClassName("level").style.display = "none";
-
 }
-
-/*
 
 
 var cnt = 0;
@@ -173,13 +169,13 @@ var src1;
 var src2;
 
 function turn(img){
-    console.log("this works")
+    console.log("turning function starts")
     if(cnt==0){
         src1 = img.src;
         //src1 = document.getElementById(img.id).src;
         cnt++;
         console.log("src1 noted");
-        colsole.log(src1);
+        console.log(src1);
     }
     else if(cnt==1){
         src2 = img.src;
@@ -189,13 +185,13 @@ function turn(img){
     }
     else if(cnt==2){
         if(src1 == src2){
-            console.log("Both Kept as it is");
+            console.log("Both were same, so kept as it is");
             cnt=0;
             turn(img);
             last+=2;
         }
         else{
-            console.log("Turned back last two");
+            console.log("Bothe were different, Turned back the last two");
             cnt=0;
             turn(img);
         }
@@ -204,9 +200,6 @@ function turn(img){
         console.log("You Won");
     }
 }
-
-
- */
 
 function enter() {
     var name= document.getElementById("inpt").value;
