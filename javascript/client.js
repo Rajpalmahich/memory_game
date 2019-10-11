@@ -167,39 +167,12 @@ function loadImagesHard(){
 var cnt = 0;
 var src1;
 var src2;
+var last;
+/*function turn(img){
 
-function turn(img){
-    console.log("turning function starts")
-    if(cnt==0){
-        src1 = img.src;
-        //src1 = document.getElementById(img.id).src;
-        cnt++;
-        console.log("src1 noted");
-        console.log(src1);
-    }
-    else if(cnt==1){
-        src2 = img.src;
-        //src2 = document.getElementById(img.id).src;
-        cnt++;
-        console.log("src2 noted");
-    }
-    else if(cnt==2){
-        if(src1 == src2){
-            console.log("Both were same, so kept as it is");
-            cnt=0;
-            turn(img);
-            last+=2;
-        }
-        else{
-            console.log("Bothe were different, Turned back the last two");
-            cnt=0;
-            turn(img);
-        }
-    }
-    if (last == limit){
-        console.log("You Won");
-    }
 }
+
+ */
 
 function enter() {
     var name= document.getElementById("inpt").value;
@@ -209,4 +182,41 @@ function enter() {
     document.getElementById("before").style.display="none";
     document.getElementById("form").style.display="none";
     document.getElementById("level").style.display="block";
+}
+
+function flip(item) {
+    $(".card").removeClass("card");
+    $(item).addClass("card")
+    $('.card').toggleClass('flipped');
+    console.log("turning function starts");
+    if(cnt==0){
+        src1 = $('.card').find('.back img').attr("src");;
+        //src1 = document.getElementById(img.id).src;
+        cnt++;
+        console.log("src1 noted");
+        console.log(src1);
+    }
+    else if(cnt==1){
+        src2 = $('.card').find('.back img').attr("src");;
+        //src2 = document.getElementById(img.id).src;
+        cnt++;
+        console.log("src2 noted");
+    }
+    else if(cnt==2){
+        if(src1 == src2){
+            console.log("Both were same, so kept as it is");
+            cnt=0;
+            flip(flip3d);
+            last+=2;
+        }
+        else{
+            console.log("Both were different, Turned back the last two");
+            cnt=0;
+            flip(flip3d);
+        }
+    }
+    if (last == limit){
+        console.log("You Won");
+    }
+
 }
